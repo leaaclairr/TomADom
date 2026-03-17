@@ -1,0 +1,352 @@
+/* ---------------------------------------------------------------- */
+/* Configuration Globale */
+/* ---------------------------------------------------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; 
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+/* ---------------------------------------------------------------- */
+/* Barre de nav */
+/* ---------------------------------------------------------------- */
+header {
+    background: white;
+    padding: 15px 5%;
+    border-bottom: 1px solid #ddd;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo_texte{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #006673;
+    font-size: 24px;
+}
+
+.logo p {
+    margin: 0;
+    color: #93c01f;
+    font-size: 14px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006673;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Image de présentation */
+/* ---------------------------------------------------------------- */
+.image_presentation {
+    background-image: linear-gradient(rgba(0,102,115,0.7), rgba(0,102,115,0.7)), url('senior.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 150px 20px 100px 20px; 
+    text-align: center;
+}
+
+.image_presentation h1 {
+    color: white;
+    font-size: 80px;
+	font-family : "Serif";
+}
+
+.image_presentation h2 {
+    color: #93c01f;
+    font-size: 1.5rem;
+	font-family : "Arial";
+}
+
+.image_presentation p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.bulle {
+    background-color: #93c01f;  
+    color: white;               
+    border-radius: 30px;        
+    padding: 15px 30px;         
+    text-decoration: none;      
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------------- */
+/* Présentation */
+/* ---------------------------------------------------------------- */
+.block {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto; 
+    padding: 40px 10px; 
+    color: #006673; 
+    background-color: #E8FFFF;
+    border-radius: 20px;
+}
+
+
+.presentation h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.presentation h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.presentation p {
+    color: black;
+    line-height: 1.6;
+}
+
+.services_container {
+    display: flex;         
+    flex-wrap: wrap;       
+    gap: 20px;             
+    justify-content: center; 
+}
+
+.bulle_page {
+    background-color: white;
+    color: black;
+    border: 2px solid #93c01f;
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+}
+
+.bulle_page h3 {
+    margin-top: 10px;
+    color: #006673;
+	text-align : center;
+}
+
+.courses,
+.info,
+.jardin,
+.animaux {
+    display: block;
+    margin: 0 auto;
+	margin-bottom : 20px;
+}
+/* ---------------------------------------------------------------- */
+/* Qui je suis */
+/* ---------------------------------------------------------------- */
+
+.qui_je_suis h1{
+	text-align : center;
+}
+
+/* ---------------------------------------------------------------- */
+/* Formulaire */
+/* ---------------------------------------------------------------- */
+
+.formulaire_inscription h1{
+	text-align : center;
+}
+
+.bloc {
+    background-color: #FCFCF2;
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.bloc p {
+    color: #006673;
+}
+
+.bloc strong {
+    font-size: 18px;
+}
+
+.service,
+.assistance,
+.travaux,
+.soins_animaux {
+    padding: 15px 0;
+    line-height: 1.6;
+}
+
+#nom, #prenom, #age, #nom1, #prenom1, #age1, #message, #boutton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+#message {
+    height: 150px;
+}
+
+#boutton {
+    background-color: #007382;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 45px;
+    font-size: 16px;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Me contacter */
+/* ---------------------------------------------------------------- */
+#MeContacter{
+	text-align : center;
+}
+
+.mecontacter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.mecontacter .telephone,
+.mecontacter .si {
+    width: 120px;
+    height: auto;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.contact_info h2,
+.contact_info p {
+    margin: 0;               
+    line-height: 1.4;  
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Footer */
+/* ---------------------------------------------------------------- */
+
+
+.test {
+    margin-top: 60px;  /* espace au-dessus du bloc précédent */
+    text-align: center;
+    font-size: 24px;
+    color: #006673;
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* Pour tablettes et mobiles */
+/* ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        position: relative;
+        padding: 15px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image_presentation {
+        padding: 60px 20px;
+    }
+
+    .image_presentation h1 {
+        font-size: 2rem;
+    }
+
+    .image_presentation h2 {
+        font-size: 1.2rem;
+    }
+
+    .bulle {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .bulle_page {
+        width: 100%;
+    }
+
+    .bloc {
+        padding: 15px;
+    }
+
+    .mecontacter {
+        flex-direction: column;
+        width: 90%;
+    }
+}

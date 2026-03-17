@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom à Dom - Services à la Personne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <!-- ---------------------------------------->
+    <!-- En-tête -->
+    <!-- ---------------------------------------->
+    <header>
+        <div class="logo">
+            <img src ="logo_tom_a_dom.png" class="logo_img">
+            <div class = "logo_texte">
+                <h1>Tom à Dom</h1>
+                <p><strong>Services à la personne</strong></p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#présentation">Présentation</a></li>
+                <li><a href="#qui-je-suis">Qui je suis ?</a></li>
+                <li><a href="#formulaire"> Formulaire d'inscripstion</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- ---------------------------------------->
+    <!-- Image Présentation -->
+    <!-- ---------------------------------------->
+    <div class="image_presentation">
+        <h1>À vos côtés chaque jour</h1>
+        <h2>Flexibilité, proximité et confiance</h2>
+        </br>
+        <p><i>"Je m'adapte à vos besoins pour vous offrir un service sur mesure"</i></p>
+        </br></br>
+        </br></br>
+        <a href="#numero_telephone" class="bulle">06 23 49 55 58</a>
+    </div>
+
+    </br></br>
+    
+    <!-- ---------------------------------------->
+    <!-- Présentation -->
+    <!-- ---------------------------------------->
+    <div class="block">
+        <div class ="presentation">
+            <h1>Présentation</h1>
+            </br></br>
+            
+            <h2> Un accompagement humain, personnalisé et de proximité </h2>
+            
+            <p>Tom Vallée propose un accompagnement à domicile destiné aux personnes âgées 
+            ou en situation de fragilité souhaitant continuer à vivre chez elles dans les
+            meilleures conditions possibles. Chaque intervention est pensée pour 
+            respecter le rythme, les habitudes et l’autonomie de la personne 
+            accompagnée. 
+            L'objectif est d'offrir une aide concrète au quotidien tout en maintenant 
+            le lien social et la confiance. </p>
+            
+            </br></br>
+            
+            <h2>Les services</h2>
+            <div class="services_container">
+                <div class="bulle_page">
+                    <img src="courses.png" class="courses">
+                    <h3>Services à domicile</h3>
+                    <ul>
+                        <li>Courses et préparation des repas</li>
+                        <li>Accompagnement et échanges</li>
+                        <li>Maintenance et vigilance du domicile</li>
+                    </ul>
+                </div>
+                
+                <div class="bulle_page">
+                    <img src="info.png" class="info">
+                    <h3>Assistance informatique</h3>
+                    <ul>
+                        <li>Ordinateur</li>
+                        <li>Téléphone</li>
+                        <li>Tablette</li>
+                        <li>Démarches en ligne</li>
+                    </ul>
+                </div>
+                
+                <div class="bulle_page">
+                    <img src="jardin.png" class="jardin">
+                    <h3>Petits travaux</h3>
+                    <ul>
+                        <li>Bricolage</li>
+                        <li>Jardinage</li>
+                        <li>Entretien des véhicules</li>
+                        <li>Sépultures</li>
+                    </ul>
+                </div>
+                
+                <div class="bulle_page">
+                    <img src="animaux.png" class="animaux">
+                    <h3>Soins aux animaux</h3>
+                    <ul>
+                        <li>Garde à domicile</li>
+                        <li>Soins légers</li>
+                        <li>Promenades</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- fin .presentation -->
+
+        <!-- ---------------------------------------->
+        <!-- Qui je suis -->
+        <!-- ---------------------------------------->
+        <div class ="qui_je_suis">
+            <h1>Qui je suis ?</h1>
+            <p>...</p>
+        </div>
+        
+        <!-- ---------------------------------------->
+        <!-- Formulaire -->
+        <!-- ---------------------------------------->
+        <div class ="formulaire_inscription">
+            <h1>Formulaire d'inscription</h1>
+            <div class="bloc">
+                <p><strong>*Qui êtes-vous* ?</strong></p>
+
+                <div class="choix_personne">
+                    <label><input type="checkbox" name="aide[]" value="peronne_dans_besoin" required >La personne dans le besoin</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="membre_famille" required>Un membre de sa famille</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="ami" required>Un ami</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="connaissance" required>Une connaissance</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+                    <br>
+                </div>
+            
+                <p>
+                    <label for="nom">*Votre Nom* : </label>
+                    <br>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Jean" required>
+                </p>
+            
+                <p>
+                    <label for="prenom">*Votre Prénom* : </label>
+                    <br>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ex: Dupont"required>
+                </p>
+                
+                <p>
+                    <label for="age">*Votre Age* : </label>
+                    <br>
+                    <input type="number" id="age" name="age" placeholder="Ex: 25" required>
+                </p>
+            </div>
+
+            <div class = "bloc">
+                <p><strong> Si vous n'êtes pas la personne concernée, qui remplit ce formulaire ? </strong></p>
+                
+                <p> 
+                    <label for="nom1">Votre Nom : </label>
+                    <br>
+                    <input type="text" id="nom1" name="nom1" placeholder="Ex: Jean" required>
+                </p>
+            
+                <p>
+                    <label for="prenom1">Votre Prénom : </label>
+                    <br>
+                    <input type="text" id="prenom1" name="prenom1" placeholder="Ex: Dupont"required>
+                </p>
+                
+                <p>
+                    <label for="age1">Votre Age : </label>
+                    <br>
+                    <input type="text" id="age1" name="age1" placeholder="Ex: 25" required>
+                </p>
+            </div>
+
+            <div class="bloc">
+                <p><strong> De quelle(s) type d'aide la personne a besoin ? </strong></p>
+                    
+                <div class="service">
+                    <p><u> Service à domicile </u></p>
+                    <label><input type="checkbox" name="aide[]" value="courses" required >Aide aux courses</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="repas" required>Préparation des repas</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="echange" required>Accompagements et échanges</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="vigilance" required>Maintenance et vigilance du domicile</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+                    <br>
+                </div>
+
+                <div class="assistance">
+                    <p><u> Assistance Informatique </u></p>
+                    <label><input type="checkbox" name="aide[]" value="ordi" required >Ordinateur</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="tel" required>Téléphone</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="tablette" required>Tablette</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="dem_en_ligne" required>Démarches en ligne</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+                    <br>
+                </div>
+
+                <div class="travaux">
+                    <p><u> Petits Travaux </u></p>
+                    <label><input type="checkbox" name="aide[]" value="bricolage" required >Bricolage</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="jardinage" required>Jardinage</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="entretien_vehicule" required>Entretien de véhicules</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="sepulture" required>Sépulture</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+                    <br>
+                </div>
+
+                <div class="soins_animaux">
+                    <p><u> Soins des animaux </u></p>
+                    <label><input type="checkbox" name="aide[]" value="garde_a_dom" required >Garde à domicile</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="soins_legers" required>Soins légers</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="promenades" required>Promenades</label>
+                    <br>
+                    
+                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="bloc">
+                <p><strong> Dites nous en plus </strong></p>
+                <div class="boite_message">
+                    <label for="votre_message">Votre message</label>
+                    <br><br>
+                    <textarea id="message" name="message" placeholder="Expliquez plus en detail votre besoin..." required></textarea>
+                </div>
+            </div>
+
+            <div class="bloc">
+                <button type="submit" id="boutton">Envoyer le formulaire</button>
+            </div>
+
+        </div> <!-- fin .formulaire_inscription -->
+
+        <br><br>
+
+        <!-- ---------------------------------------->
+        <!-- Contacter -->
+        <!-- ---------------------------------------->
+        <h1 id="MeContacter">Me contacter</h1>
+        <div class="bulle_page mecontacter">
+            <img src="telephone.avif" class="telephone">
+            <div class="contact_info">
+                <h2>Tom Vallée</h2>
+                <p><strong>tomadom60.pro@gmail.com</strong></p>
+                <p><strong>06 23 49 55 58</strong></p>
+            </div>
+            <img src="SI.png" class="si">
+        </div>
+    </div> <!-- FIN .block -->
+
+
+
+</body>
+</html>
