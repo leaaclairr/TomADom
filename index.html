@@ -24,8 +24,9 @@
         <nav>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#présentation">Présentation</a></li>
+                <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#qui-je-suis">Qui je suis ?</a></li>
+				<li><a href="#lieu">Où ?</a></li>
                 <li><a href="#formulaire"> Formulaire d'inscripstion</a></li>
                 <li><a href="#contact">Me contacter</a></li>
             </ul>
@@ -35,7 +36,7 @@
     <!-- ---------------------------------------->
     <!-- Image Présentation -->
     <!-- ---------------------------------------->
-    <div class="image_presentation">
+    <div class="image_presentation" id="accueil">
         <h1>À vos côtés chaque jour</h1>
         <h2>Flexibilité, proximité et confiance</h2>
         </br>
@@ -45,13 +46,14 @@
         <a href="#numero_telephone" class="bulle">06 23 49 55 58</a>
     </div>
 
+
     </br></br>
     
     <!-- ---------------------------------------->
     <!-- Présentation -->
     <!-- ---------------------------------------->
     <div class="block">
-        <div class ="presentation">
+        <div class ="presentation" id="presentation">
             <h1>Présentation</h1>
             </br></br>
             
@@ -116,183 +118,258 @@
         <!-- ---------------------------------------->
         <!-- Qui je suis -->
         <!-- ---------------------------------------->
-        <div class ="qui_je_suis">
+        <div class ="qui_je_suis" id="qui-je-suis">
             <h1>Qui je suis ?</h1>
-            <p>...</p>
+            <p>Je m'appelle Tom Vallée<br> J'ai ... ans <br> Et je me mets à votre service pour vous accompagner au quotidien.
+				J'aime aider les personnes âgées et veiller à leur bien-être, que ce soit pour faire vos courses, entretenir
+				votre jardin, préparer vos repas ou simplement vous tenir compagnie. <br>
+				Mon objectif est de vous offrir un soutien personnalisé, chaleureux et fiable,
+				pour que vous puissiez profiter de chaque journée en toute sérénité.</p>
         </div>
         
+		<!-- ---------------------------------------->
+        <!-- Où -->
+        <!-- ---------------------------------------->
+		<div class="ou" id="lieu">
+			<h1> Où je me situe ? </h1>
+			<br>
+			<p> Je me deplace dans toute la région <b>Compiègnoise</b> : </p>
+			<iframe 
+				src="https://www.google.com/maps?q=Le+Meux&output=embed"
+				width="600" 
+				height="450" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy">
+			</iframe>
+			<br>
+		</div>
+		
+		
         <!-- ---------------------------------------->
         <!-- Formulaire -->
         <!-- ---------------------------------------->
-        <div class ="formulaire_inscription">
+        <div class ="formulaire_inscription" id="formulaire">
             <h1>Formulaire d'inscription</h1>
-            <div class="bloc">
-                <p><strong>*Qui êtes-vous* ?</strong></p>
+			<form>
+				<div class="bloc">
+				
+					<p><strong>Qui êtes-vous * ?</strong></p>
 
-                <div class="choix_personne">
-                    <label><input type="checkbox" name="aide[]" value="peronne_dans_besoin" required >La personne dans le besoin</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="membre_famille" required>Un membre de sa famille</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="ami" required>Un ami</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="connaissance" required>Une connaissance</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
-                    <br>
-                </div>
-            
-                <p>
-                    <label for="nom">*Votre Nom* : </label>
-                    <br>
-                    <input type="text" id="nom" name="nom" placeholder="Ex: Jean" required>
-                </p>
-            
-                <p>
-                    <label for="prenom">*Votre Prénom* : </label>
-                    <br>
-                    <input type="text" id="prenom" name="prenom" placeholder="Ex: Dupont"required>
-                </p>
-                
-                <p>
-                    <label for="age">*Votre Age* : </label>
-                    <br>
-                    <input type="number" id="age" name="age" placeholder="Ex: 25" required>
-                </p>
-            </div>
+					<div class="choix_personne">
+						<label><input type="checkbox" name="aide[]" value="peronne_dans_besoin" required >La personne dans le besoin</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="membre_famille" required>Un membre de sa famille</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="ami" required>Un ami</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="connaissance" required>Une connaissance</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+						<br>
+					</div>
+				
+					<p>
+						<label for="nom">Votre Nom * : </label>
+						<br>
+						<input type="text" id="nom" name="nom" placeholder="Ex: Jean" required>
+					</p>
+				
+					<p>
+						<label for="prenom">Votre Prénom * : </label>
+						<br>
+						<input type="text" id="prenom" name="prenom" placeholder="Ex: Dupont"required>
+					</p>
+					
+					<p>
+						<label for="age">Votre Date de Naissance * : </label>
+						<br>
+						<input type="text" id="age" name="age" placeholder="Ex: JJ/MM/AAAA" required>
+					</p>
+				</div>
 
-            <div class = "bloc">
-                <p><strong> Si vous n'êtes pas la personne concernée, qui remplit ce formulaire ? </strong></p>
-                
-                <p> 
-                    <label for="nom1">Votre Nom : </label>
-                    <br>
-                    <input type="text" id="nom1" name="nom1" placeholder="Ex: Jean" required>
-                </p>
-            
-                <p>
-                    <label for="prenom1">Votre Prénom : </label>
-                    <br>
-                    <input type="text" id="prenom1" name="prenom1" placeholder="Ex: Dupont"required>
-                </p>
-                
-                <p>
-                    <label for="age1">Votre Age : </label>
-                    <br>
-                    <input type="text" id="age1" name="age1" placeholder="Ex: 25" required>
-                </p>
-            </div>
+				<div class = "bloc">
+					<p><strong> Informations sur la personne dans le besoin </strong></p>
+					
+					<p> 
+						<label for="nom1"> Nom : </label>
+						<br>
+						<input type="text" id="nom1" name="nom1" placeholder="Ex: Jean" required>
+					</p>
+				
+					<p>
+						<label for="prenom1"> Prénom : </label>
+						<br>
+						<input type="text" id="prenom1" name="prenom1" placeholder="Ex: Dupont"required>
+					</p>
+					
+					<p>
+						<label for="age1"> Date de Naissance : </label>
+						<br>
+						<input type="text" id="age1" name="age1" placeholder="Ex: JJ/MM/AAAA" required>
+					</p>
+				</div>
+				
+				<div class="bloc">
+					<p><strong> Quelle est l'adresse ? * </strong></p>
+					
+					<p> 
+					<label for="prenom1">Votre adresse postale * :</label>
+					<br>
+					<input type="text" id="adresse" name="adresse" placeholder="Ex : 152 RUE DES MIMOSAS"required>
+					</p>
+					
+					<p> 
+					<label for="prenom1">Votre code postal * : </label>
+					<br>
+					<input type="number" id="code_postal" name="code_postal" placeholder="Ex : 72000"required>
+					</p>
+					
+					<p><strong>Si la personne concernée est en appartement :  </strong></p>
+					
+					<p> 
+					<label for="prenom1">Numéro de bâtiment : </label>
+					<br>
+					<input type="text" id="num_bat" name="num_bat" placeholder="Ex : B">
+					</p>
+					
+					<p> 
+					<label for="prenom1">Numéro d'étage : </label>
+					<br>
+					<input type="text" id="num_etage" name="num_etage" placeholder="Ex : 3ème étage">
+					</p>
+					
+					<p> 
+					<label for="prenom1">Numéro d'appartement : </label>
+					<br>
+					<input type="text" id="num_appart" name="num_appart" placeholder="Ex : 12">
+					</p>
+					
+					
+				</div>
 
-            <div class="bloc">
-                <p><strong> De quelle(s) type d'aide la personne a besoin ? </strong></p>
-                    
-                <div class="service">
-                    <p><u> Service à domicile </u></p>
-                    <label><input type="checkbox" name="aide[]" value="courses" required >Aide aux courses</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="repas" required>Préparation des repas</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="echange" required>Accompagements et échanges</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="vigilance" required>Maintenance et vigilance du domicile</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
-                    <br>
-                </div>
+				<div class="bloc">
+					<p><strong> De quelle(s) type d'aide la personne a besoin ? </strong></p>
+						
+					<div class="service">
+						<p><u> Service à domicile </u></p>
+						<label><input type="checkbox" name="aide[]" value="courses" required >Aide aux courses</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="repas" required>Préparation des repas</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="echange" required>Accompagements et échanges</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="vigilance" required>Maintenance et vigilance du domicile</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+						<br>
+					</div>
 
-                <div class="assistance">
-                    <p><u> Assistance Informatique </u></p>
-                    <label><input type="checkbox" name="aide[]" value="ordi" required >Ordinateur</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="tel" required>Téléphone</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="tablette" required>Tablette</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="dem_en_ligne" required>Démarches en ligne</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
-                    <br>
-                </div>
+					<div class="assistance">
+						<p><u> Assistance Informatique </u></p>
+						<label><input type="checkbox" name="aide[]" value="ordi" required >Ordinateur</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="tel" required>Téléphone</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="tablette" required>Tablette</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="dem_en_ligne" required>Démarches en ligne</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+						<br>
+					</div>
 
-                <div class="travaux">
-                    <p><u> Petits Travaux </u></p>
-                    <label><input type="checkbox" name="aide[]" value="bricolage" required >Bricolage</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="jardinage" required>Jardinage</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="entretien_vehicule" required>Entretien de véhicules</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="sepulture" required>Sépulture</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
-                    <br>
-                </div>
+					<div class="travaux">
+						<p><u> Petits Travaux </u></p>
+						<label><input type="checkbox" name="aide[]" value="bricolage" required >Bricolage</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="jardinage" required>Jardinage</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="entretien_vehicule" required>Entretien de véhicules</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="sepulture" required>Sépulture</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+						<br>
+					</div>
 
-                <div class="soins_animaux">
-                    <p><u> Soins des animaux </u></p>
-                    <label><input type="checkbox" name="aide[]" value="garde_a_dom" required >Garde à domicile</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="soins_legers" required>Soins légers</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="promenades" required>Promenades</label>
-                    <br>
-                    
-                    <label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
-                    <br><br>
-                </div>
-            </div>
+					<div class="soins_animaux">
+						<p><u> Soins des animaux </u></p>
+						<label><input type="checkbox" name="aide[]" value="garde_a_dom" required >Garde à domicile</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="soins_legers" required>Soins légers</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="promenades" required>Promenades</label>
+						<br>
+						
+						<label><input type="checkbox" name="aide[]" value="autre" required>Autre</label>
+						<br><br>
+					</div>
+				</div>
 
-            <div class="bloc">
-                <p><strong> Dites nous en plus </strong></p>
-                <div class="boite_message">
-                    <label for="votre_message">Votre message</label>
-                    <br><br>
-                    <textarea id="message" name="message" placeholder="Expliquez plus en detail votre besoin..." required></textarea>
-                </div>
-            </div>
+				<div class="bloc">
+					<p><strong> Dites nous en plus </strong></p>
+					<div class="boite_message">
+						<label for="votre_message">Votre message</label>
+						<br><br>
+						<textarea id="message" name="message" placeholder="Expliquez plus en detail votre besoin..." required></textarea>
+					</div>
+				</div>
 
-            <div class="bloc">
-                <button type="submit" id="boutton">Envoyer le formulaire</button>
-            </div>
+				<div class="bloc">
+					<button type="submit" id="boutton">Envoyer le formulaire</button>
+				</div>
+			</form>
 
         </div> <!-- fin .formulaire_inscription -->
 
         <br><br>
 
-        <!-- ---------------------------------------->
-        <!-- Contacter -->
-        <!-- ---------------------------------------->
-        <h1 id="MeContacter">Me contacter</h1>
-        <div class="bulle_page mecontacter">
-            <img src="telephone.avif" class="telephone">
-            <div class="contact_info">
-                <h2>Tom Vallée</h2>
-                <p><strong>tomadom60.pro@gmail.com</strong></p>
-                <p><strong>06 23 49 55 58</strong></p>
-            </div>
-            <img src="SI.png" class="si">
-        </div>
+
     </div> <!-- FIN .block -->
+	
+	
+<!-- ---------------------------------------->
+<!-- Footer -->
+<!-- ---------------------------------------->
 
-
+	<div class="footer" id="contact">
+		
+		<p> Tom Vallée </p>
+		<p> tomadom60.pro@gmail.com </p>
+		<p> 06 23 49 55 58 </p>
+		<br>
+		
+		<img src="SI.png" class="si">
+		
+		<div class = "liens">
+		
+			<a href="politiquedeconf.html">Politique de confidentialité</a>
+			<a href="faq">FAQ</a>
+			<a href="mentionleg.html">Mentions Légales</a>
+		</div>
+		
+	
+	</div> <!-- Fin du footer -->
+	
 
 </body>
 </html>
