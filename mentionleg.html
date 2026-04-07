@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentions Légales - TomADom</title>
+    <style>
+       /* Variables de couleurs basées sur le logo et le site */
+        :root {
+            --primary-blue: #005f6b; /* Bleu canard des titres */
+            --accent-green: #a3d12d;  /* Vert pomme du bouton/logo */
+            --text-dark: #333333;
+            --bg-light: #f4f9f8;     /* Fond très légèrement bleuté/vert */
+        }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            max-width: 900px; 
+            margin: auto; 
+            padding: 40px 20px; 
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        h1 { 
+            color: var(--primary-blue);
+            font-size: 2.2rem;
+            border-bottom: 4px solid var(--accent-green);
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 { 
+            color: var(--primary-blue);
+            margin-top: 40px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Petit trait décoratif devant les titres H2 */
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-green);
+            margin-right: 15px;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        strong {
+            color: var(--primary-blue);
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* Style pour les liens s'il y en a */
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-green);
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            background-color: var(--accent-green);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mentions Légales</h1>
+    
+    <h2>1. Présentation du site</h2>
+    <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans <br> l'économie numérique, il est précisé aux utilisateurs du site Tom à Dom l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+    <p>Propriétaire & Éditeur : [nom , [Statut Juridique, ex: Entrepreneur Individuel]<strong>[URL]</strong> 
+    <p>est édité par [Nom] </p>
+    <p> situé au [Adresse]. </p>
+    <p> SIRET : [Numéro].</p>
+
+    <h2>2. Hébergement</h2>
+    <p>Ce site est hébergé par [Nom de l'hébergeur], [Adresse de l'hébergeur].</p>
+
+    <h2>3. Cookies et Données</h2>
+    <p>Nous collectons vos données uniquement pour [Raison]. Vous pouvez demander leur suppression à [Email].</p>
+
+    
+    </body>
+</html>
